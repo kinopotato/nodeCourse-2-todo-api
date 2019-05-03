@@ -15,15 +15,15 @@ const User = mongoose.model("User", {
 
 //create a user and save in db
 
-const newUser = new User({
-  email: "something@gmail.com"
-});
+// const newUser = new User({
+//   email: "something@gmail.com"
+// });
 
-newUser.save().then((doc) => {
-  console.log("user saved", doc);
-}, (error) => {
-  console.log("user not saved", error);
-})
+// newUser.save().then((doc) => {
+//   console.log("user saved", doc);
+// }, (error) => {
+//   console.log("user not saved", error);
+// })
 
 //export user module
 
