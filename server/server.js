@@ -22,9 +22,9 @@ app.post("/todos", (req, res) => {
   });
 
   todo.save().then((success) => {
-    console.log("todo saved", success);
+   res.send(success);
   }, (error) => {
-    console.log("error", error);
+    res.status(400).send(error);
   })
 })
 
@@ -36,3 +36,5 @@ app.listen(3000, () => {
 })
 
 
+//export server for testing
+module.exports ={app};
