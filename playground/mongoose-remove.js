@@ -16,10 +16,10 @@ const {User} = require("../server/models/user");
 //Todo.findOneAndRemove({})
 //Todo.fineByIdAndRemove({})
 
-Todo.findOneAndRemove({_id: "5ccc689f83cb34db943480ac"}).then((todo) => {
-  
-})
+// Todo.findOneAndRemove({_id: "5ccc689f83cb34db943480ac"}).then((todo) => {
 
-Todo.findByIdAndRemove("5ccc689f83cb34db943480ac").then((todo) => {
-  console.log(todo);
-})
+// })
+
+// Todo.findByIdAndRemove("5ccc689f83cb34db943480ac").then((todo) => {
+//   console.log(todo);
+// })
